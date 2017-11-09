@@ -6,9 +6,10 @@ const {
   View,
   Animated,
 } = ReactNative;
+const createReactClass = require('create-react-class');
 const Button = require('./Button');
 
-const DefaultTabBar = React.createClass({
+const DefaultTabBar = createReactClass({
   propTypes: {
     goToPage: React.PropTypes.func,
     activeTab: React.PropTypes.number,
